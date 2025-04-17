@@ -1,21 +1,13 @@
 {
-  "name": "household-costs",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
+  "name": "electron-app",
+  "version": "1.0.0",
+  "main": "./out/main/index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "electron:dev": "NODE_ENV=development electron ."
-  },
-  "dependencies": {
-    "electron": "^35.1.5",
-    "electron-builder": "^26.0.12",
-    "sqlite3": "^5.1.7",
-    "vue": "^3.5.13"
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "prebuild": "electron-vite build"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.3.0"
+    "electron-vite": "^3.1.0"
   }
 }
